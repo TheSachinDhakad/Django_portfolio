@@ -1,0 +1,42 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+
+{% block content %}
+<div class=" mt-5">
+    <div class="text-center">
+        <img src="{% static 'core/images/photo.jpg' %}" alt="profile-photo"
+            class="img-thumbnail" width="250px" height="150px">
+    </div>
+
+    <div class="text-white mt-5 mx-5 text-justify">
+        <h1 class="font-weight-bold st-font ">Hello,</h1>
+        <div class="px-4" style="line-height: 2rem;">
+            <p style="text-indent:100px;"> I am <b class="text-warning"> Sachin
+                    Nagar</b>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Recusandae vel corporis dolorem animi pariatur, possimus
+                incidunt alias aperiam error accusantium nostrum vero?
+            </p>
+            <p>
+                Eaque, esse magnam ducimus aspernatur deleniti, molestias
+                doloremque, dolorum distinctio minima <b class="text-warning">
+                    NIIST </b>quod expedita! sachin nagar pipalkheda rajgarh
+            </p>
+            <p>Soluta suscipit natus commodi consequuntur aspernatur vitae
+                incidunt itaque? A odio eos at, blanditiis ullam cum sed .</p>
+        </div>
+    </div>
+
+    <div class="text-center">
+        <a href="{% static 'core/images/resume.pdf' %}" download class="btn btn-outline-info my-3 mr-5">Download CV</a>
+        <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mr-5">Hire me</a>
+        <a href="{% url 'contact' %}" class="btn btn-outline-info my-3 mr-5">Contact</a>
+        <!-- <a href="./images/Sachin Nagar .pdf" download class="btn btn2">Download CV</a> -->
+
+    </div>
+</div>
+
+
+
+{% endblock content %}

@@ -1,0 +1,90 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<div class="container mt-5">
+    <h1 class="text-warning mb-5 border-bottom">CONTACT</h1>
+
+    <div class="text-white row mb-5">
+        <p class="mx-auto-mb-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta a
+            beatae minus natus, inventore qui.
+        </p>
+
+        <div class="col-sm-9 mb-5">
+            <form method="POST" action="/contact">
+                {% csrf_token %}
+                <div class="row g-3">
+                    <div class="col">
+                        <label for="inputName">Your Name </label>
+                        <input type="text" class="form-control" id="inputName"
+                            name="name"/>
+                    </div> <div class="col">
+                        <label for="inputEmail">Your Email </label>
+                        <input type="email" class="form-control" id="inputEmail"
+                            required name="email"/>
+                    </div>
+                </div>
+
+                <div class="from-group ">
+                    <label for="inputSubject">Your Subject </label>
+                    <input type="text" class="form-control" id="inputSubject"
+                        name="subject"/>
+
+                </div>
+                <div class="mb-3">
+                    <label for="massage">Your Massage</label>
+                    <textarea class="form-control" id="massage" required
+                        name="massage" ></textarea>
+                </div>
+                <button class="btn btn-primary" type="submit">Send</button>
+            </form>
+
+        </div>
+        <div class="col-sm-3 text-center">
+            <ul class="list-unstyled">
+                <li>
+                    <i class="fa-solid fa-location-dot i-colo"></i>
+                    <p>Bhopal , M.P. , India</p>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-phone i-colo"></i>
+
+                    <p>+91 9098224586</p>
+                </li>
+
+
+                <li>
+                    <i class="fa-solid fa-envelope i-colo"></i>
+
+
+
+                    <p>thesachindhakad@gmail.com</p>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+
+</div>
+
+<div class="text-center" ">
+    <a href="https://www.linkedin.com/in/sachin-nagar-102929231/"
+        target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+    <a href="https://github.com/TheSachinDhakad" target="_blank"><i
+            class="fa-brands fa-square-github fa-2x"></i></a>
+    <a href="https://www.hackerrank.com/sachindhakad7265" target="_blank"><i
+            class="fa-brands fa-hackerrank fa-2x"></i></a>
+    <a href="https://instagram.com/thesachindhakad?igshid=YmMyMTA2M2Y="
+        target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>
+
+
+
+</div>
+
+
+{% endblock content %}

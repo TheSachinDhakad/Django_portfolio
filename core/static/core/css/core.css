@@ -1,0 +1,36 @@
+.st-font{
+    font-family: 'Martian Mono', monospace;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Satisfy', cursive;
+}
+
+html,body{
+    height: 100%;
+}
+
+.container-fluid{
+    min-height: 100%;
+}
+
+.i-colo{
+    color: chartreuse;
+}
+.ss-colo{
+    color: rgb(132, 235, 149);
+}
+
+a.nav-link{
+    color: whitesmoke;
+}
+
+a.nav-link:hover{
+    background-color: rgb(221, 208, 89);
+    color: black;
+}
+
+a.nav-link.active{
+    background-color: rgb(243, 220, 12);
+    color: black;
+    font-weight: bold;
+}
